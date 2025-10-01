@@ -1,0 +1,50 @@
+<!-- Service Card Component -->
+<article class="service-card group hover:bg-gray-50 p-6 rounded-lg transition-all duration-300 cursor-pointer relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    
+    <div class="relative z-10">
+        <div class="flex items-center mb-4">
+            <div class="service-icon w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors duration-300">
+                <!-- Icon will be inserted via JavaScript or manually -->
+                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 group-hover:text-primary transition-colors duration-300 font-heading">
+                Servicetitel
+            </h3>
+        </div>
+        
+        <p class="text-gray-600 mb-4 font-body leading-relaxed">
+            Beschreibung des Services und der Vorteile für den Kunden.
+        </p>
+        
+        <ul class="space-y-2 mb-6">
+            <li class="flex items-center text-gray-700 hover:text-primary transition-colors duration-200">
+                <svg class="w-4 h-4 text-primary mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-sm font-body">Leistungspunkt 1</span>
+            </li>
+            <li class="flex items-center text-gray-700 hover:text-primary transition-colors duration-200">
+                <svg class="w-4 h-4 text-primary mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-sm font-body">Leistungspunkt 2</span>
+            </li>
+            <li class="flex items-center text-gray-700 hover:text-primary transition-colors duration-200">
+                <svg class="w-4 h-4 text-primary mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-sm font-body">Leistungspunkt 3</span>
+            </li>
+        </ul>
+        
+        <div class="flex justify-between items-center">
+            <span class="text-primary font-bold text-lg font-heading">Ab €XX</span>
+            <button class="btn btn-primary text-sm px-4 py-2 bg-primary text-white rounded-md hover:bg-accent transition-colors duration-300">
+                Mehr erfahren
+            </button>
+        </div>
+    </div>
+</article>

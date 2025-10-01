@@ -1,0 +1,62 @@
+/* ======================
+   CRITICAL CSS - Above the fold
+   ====================== */
+
+/* Base Variables */
+:root {
+    --primary: #D4AF37;
+    --secondary: #111111;
+    --accent: #967117;
+    --transition: all 0.3s ease;
+}
+
+/* Critical Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Critical Header Styles */
+header {
+    min-height: 100vh;
+    background: var(--secondary);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+/* Critical Typography */
+.font-heading {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.025em;
+}
+
+.font-body {
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Critical Button Styles */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - KCC Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/critical.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB',    // Modern Blue
+                        secondary: '#1E293B',  // Slate Dark
+                        accent: '#F59E0B',     // Amber
+                        blue: {
+                            light: '#60A5FA',
+                            DEFAULT: '#2563EB',
+                            dark: '#1D4ED8'
+                        },
+                        slate: {
+                            light: '#64748B',
+                            DEFAULT: '#334155',
+                            dark: '#1E293B'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Raleway', 'sans-serif'],
+                        'body': ['Roboto Slab', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-body text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-900/95 backdrop-blur-sm shadow-lg border-b border-slate-700" role="navigation" aria-label="Hauptnavigation">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html#home" class="flex items-center" aria-label="KCC Service Startseite">
+                    <img src="assets/images/navi-logo.png" alt="KCC Service Logo - Professionelle Hausdienstleistungen" class="h-12 w-auto">
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html#about" class="text-slate-300 hover:text-blue-400 font-medium transition-colors duration-300 flex items-center space-x-1 px-3 py-2 relative group">
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                        <span>Über uns</span>
+                    </a>
+                    <a href="index.html#services" class="text-slate-300 hover:text-blue-400 font-medium transition-colors duration-300 flex items-center space-x-1 px-3 py-2 relative group">
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                        <span>Leistungen</span>
+                    </a>
+                    <a href="index.html#target-group" class="text-slate-300 hover:text-blue-400 font-medium transition-colors duration-300 flex items-center space-x-1 px-3 py-2 relative group">
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                        <span>Für wen</span>
+                    </a>
+                    <a href="index.html#faq" class="text-slate-300 hover:text-blue-400 font-medium transition-colors duration-300 flex items-center space-x-1 px-3 py-2 relative group">
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                        <span>FAQ</span>
+                    </a>
+                    <a href="index.html#contact" class="ml-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-2 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center space-x-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <span>Kontakt</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-button" class="md:hidden text-slate-300 hover:text-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-slate-700 mt-2">
+                <a href="index.html#about" class="block py-3 px-4 text-slate-300 hover:text-blue-400 hover:bg-slate-800/50 rounded-lg transition-colors duration-300">Über uns</a>
+                <a href="index.html#services" class="block py-3 px-4 text-slate-300 hover:text-blue-400 hover:bg-slate-800/50 rounded-lg transition-colors duration-300">Leistungen</a>
+                <a href="index.html#target-group" class="block py-3 px-4 text-slate-300 hover:text-blue-400 hover:bg-slate-800/50 rounded-lg transition-colors duration-300">Zielgruppe</a>
+                <a href="index.html#faq" class="block py-3 px-4 text-slate-300 hover:text-blue-400 hover:bg-slate-800/50 rounded-lg transition-colors duration-300">FAQ</a>
+                <a href="index.html#contact" class="block py-3 px-4 text-slate-300 hover:text-blue-400 hover:bg-slate-800/50 rounded-lg transition-colors duration-300 font-semibold">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 pt-24">
+        <div class="bg-white shadow-md rounded-lg p-8 max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-8 text-center text-secondary border-b border-gray-200 pb-4">Impressum</h1>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-primary">Angaben gemäß § 5 TMG</h2>
+                <p class="mb-4">
+                    KCC Service<br>
+                    [Straße Nr.]<br>
+                    [PLZ] Karlsruhe<br>
+                    Deutschland
+                </p>
+                
+                <h3 class="text-xl font-semibold mb-3 mt-6 text-primary">Vertreten durch:</h3>
+                <p class="mb-4">
+                    [Vollständiger Name des Inhabers/Geschäftsführers]
+                </p>
+                
+                <h3 class="text-xl font-semibold mb-3 mt-6 text-primary">Kontakt:</h3>
+                <p class="mb-1">Telefon: 017620957844</p>
+                <p class="mb-1">E-Mail: [E-Mail-Adresse]</p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-primary">Umsatzsteuer-ID</h2>
+                <p class="mb-4">
+                    Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
+                    [Umsatzsteuer-ID]
+                </p>
+                
+                <h3 class="text-xl font-semibold mb-3 mt-6 text-primary">Aufsichtsbehörde:</h3>
+                <p class="mb-4">
+                    [Name der zuständigen Aufsichtsbehörde]<br>
+                    [Anschrift der zuständigen Aufsichtsbehörde]
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-primary">Haftungsausschluss</h2>
+                
+                <h3 class="text-xl font-semibold mb-3 text-primary">Haftung für Inhalte</h3>
+                <p class="mb-4">
+                    Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+                </p>
+                <p class="mb-4">
+                    Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+                </p>
+                
+                <h3 class="text-xl font-semibold mb-3 mt-6 text-primary">Haftung für Links</h3>
+                <p class="mb-4">
+                    Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+                </p>
+                <p class="mb-4">
+                    Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+                </p>
+                
+                <h3 class="text-xl font-semibold mb-3 mt-6 text-primary">Urheberrecht</h3>
+                <p class="mb-4">
+                    Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+                </p>
+                <p class="mb-4">
+                    Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+                </p>
+                
+                <p class="mt-8 text-sm text-gray-600">
+                    Quelle: <a href="https://www.e-recht24.de" class="text-primary hover:underline">eRecht24</a>
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-gray-400 py-12 border-t border-gold/20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="mb-6">
+                        <img src="assets/images/navi-logo.png" alt="KCC Service Logo" class="h-16 w-auto mb-4" loading="lazy" decoding="async">
+                    </div>
+                    <p class="mb-4 font-body">Ihr vertrauenswürdiger Partner für hochwertige Hausdienstleistungen mit langjähriger Expertise in Dortmund und Umgebung.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-4">Leistungen</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">Umzüge</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">Entrümpelung & Entsorgung</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">Bodenlegerarbeiten</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">Akustik- und Trockenbau</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">Gebäudereinigung</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">Bautentrocknung</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">Holz- & Bautenschutz</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-4">Schnellzugriff</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#about" class="hover:text-white transition-colors">Über uns</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">Leistungen</a></li>
+                        <li><a href="index.html#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="index.html#contact" class="hover:text-white transition-colors">Kontakt</a></li>
+                        <li><a href="impressum.html" class="hover:text-white transition-colors">Impressum</a></li>
+                        <li><a href="datenschutz.html" class="hover:text-white transition-colors">Datenschutzerklärung</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-4">Kontakt</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                                <a href="tel:017620957844" class="hover:text-white transition-colors">017620957844</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                Dortmund und Umgebung
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p>© 2025 KCC Service. Alle Rechte vorbehalten.</p>
+                <p class="mt-2 text-sm">KCC Service – <span class="text-primary">K</span>ompetenz. <span class="text-primary">C</span>harakter. <span class="text-primary">C</span>lever gelöst.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Mobile menu toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.toggle('hidden');
+                menuButton.setAttribute('aria-expanded', String(isOpen));
+            });
+        }
+    </script>
+</body>
+</html>
